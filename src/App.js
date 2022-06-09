@@ -16,6 +16,7 @@ library.add(fas, faTwitter, faFontAwesome, faGithub, faLinkedinIn)
 
 function App() {
   return (
+    <BrowserRouter>
     <section>
             <header>
                 <div className="row">
@@ -29,19 +30,20 @@ function App() {
                         </footer>
                     </div>
                     <div className="col-md-9">
-                        <BrowserRouter>
+                        
                           <Routes>
                             <Route exact path="/" element = {<Layout />}></Route>
                             <Route path="/about" element = {<About />}></Route>
                             <Route path="/projects" element = {<Project />}></Route>
                             <Route path="/contact" element = {<Contact />}></Route>
                           </Routes>
-                        </BrowserRouter>
+                        
                     </div>
                     
                 </div>
             </header>
         </section>
+        </BrowserRouter>
   );
 }
 
