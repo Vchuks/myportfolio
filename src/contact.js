@@ -34,7 +34,7 @@ const Contact = () => {
                       <FontAwesomeIcon icon="fa-brands fa-github" />
                     </p>
                   </div>
-                  <div className='col-md-11'>
+                  <div className='col-md-11' id="col2">
                     <p>+234-7033378359</p>
                     <p>vchuks4all@yahoo.com</p>
                     <p>No 10 Kajola Street Shomolu Bariga, Lagos State</p>
