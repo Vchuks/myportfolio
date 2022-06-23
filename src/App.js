@@ -32,10 +32,11 @@ function App() {
                     <div className="col-md-9">
                         
                           <Routes>
-                            <Route exact path="/" element = {<Layout />}></Route>
+                            <Route exact path="/" element = {<Layout />}>
                             <Route path="/about" element = {<About />}></Route>
                             <Route path="/projects" element = {<Project />}></Route>
                             <Route path="/contact" element = {<Contact />}></Route>
+                            </Route>
                           </Routes>
                         
                     </div>
