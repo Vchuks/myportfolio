@@ -1,7 +1,7 @@
 import logo from './images/onyii.jpg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Layout from './layout';
 import About from './about';
 import Project from './projects';
@@ -16,13 +16,13 @@ library.add(fas, faTwitter, faFontAwesome, faGithub, faLinkedinIn)
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/myportfolio">
     <section>
             <header>
                 <div className="row">
                     <div className="col" id="dp1">
                         <div className="dp">
-                            <img src={logo} alt="profile picture"/>
+                            <img src={logo} alt="profile"/>
                         </div>
                         <Nav/>
                         <footer>
