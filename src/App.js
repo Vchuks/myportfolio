@@ -16,7 +16,7 @@ library.add(fas, faTwitter, faFontAwesome, faGithub, faLinkedinIn)
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <section>
             <header>
                 <div className="row">
@@ -32,11 +32,10 @@ function App() {
                     <div className="col-md-9">
                         
                           <Routes>
-                            <Route exact path="/" element = {<Layout />}>
+                            <Route exact path="/" element = {<Layout />}></Route>
                             <Route path="/about" element = {<About />}></Route>
                             <Route path="/projects" element = {<Project />}></Route>
                             <Route path="/contact" element = {<Contact />}></Route>
-                            </Route>
                           </Routes>
                         
                     </div>
